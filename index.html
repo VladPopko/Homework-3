@@ -4,9 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Homework 3</title>
 </head>
 <body>
+  <script>
+    var age = prompt('Сколько вам лет?', '17');
+    var expression;
 
+
+    if (age) {
+      age = parseInt(age.match(/\d+/));
+      expression = age % 10;
+      if (expression === 1) {
+        alert('Вам ' + age + ' год!');
+      } else if (expression === 2 || expression === 3 || expression === 4) {
+          alert('Вам ' + age + ' года!');
+      } else {
+        alert('Вам ' + age + ' лет!');
+      }
+    } else {
+      alert('Вы не ввели возраст!');
+    }
+  </script>
 </body>
 </html>
