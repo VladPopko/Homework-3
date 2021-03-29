@@ -11,15 +11,12 @@
     var age = prompt('Сколько вам лет?', '17');
     var expression;
 
-
     if (age) {
       age = parseInt(age.match(/\d+/));
       expression = age % 10;
-      if (age > 10 && age < 20){
-        alert('Вам ' + age + ' лет!');
-      } else if (expression === 1) {
+      if (expression === 1 & (age < 10 || age > 20) ) {
         alert('Вам ' + age + ' год!');
-      } else if (expression === 2 || expression === 3 || expression === 4) {
+      } else if (expression === 2 & (age < 10 || age > 20 ) || expression === 3 & (age < 10 || age > 20 ) || expression === 4 & (age < 10 || age > 20 )) {
           alert('Вам ' + age + ' года!');
       } else {
         alert('Вам ' + age + ' лет!');
